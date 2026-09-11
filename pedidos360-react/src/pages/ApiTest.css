@@ -1,0 +1,492 @@
+/* ============================================================
+   PEDIDOS360
+   PRUEBA DE BACKEND
+   ============================================================ */
+
+.backend-section {
+    margin-top: 38px;
+}
+
+
+/* ============================================================
+   ENCABEZADO
+   ============================================================ */
+
+.backend-header {
+    padding: 20px 15px 35px;
+
+    text-align: center;
+}
+
+.backend-header h1 {
+    margin: 10px 0 12px;
+
+    color: #1d1728;
+
+    font-size: clamp(38px, 5vw, 55px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    font-weight: 800;
+}
+
+.backend-header h1 span {
+    color: #7c3aed;
+}
+
+.backend-header p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #756b82;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.backend-divider {
+    width: 190px;
+    height: 2px;
+
+    margin: 27px auto 0;
+
+    background: #e9e3ee;
+
+    position: relative;
+}
+
+.backend-divider span {
+    position: absolute;
+
+    width: 52px;
+    height: 3px;
+
+    top: -1px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 5px;
+
+    background: #7c3aed;
+}
+
+
+/* ============================================================
+   ENDPOINT CARD
+   ============================================================ */
+
+.endpoint-card {
+    margin-bottom: 25px;
+
+    padding: 28px;
+
+    background: white;
+
+    border: 1px solid #e9e4ee;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 7px 23px rgba(45, 25, 65, 0.04);
+
+    transition: 0.2s ease;
+}
+
+.endpoint-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(45, 25, 65, 0.07);
+}
+
+
+/* ============================================================
+   PARTE SUPERIOR
+   ============================================================ */
+
+.endpoint-top {
+    display: grid;
+
+    grid-template-columns: 90px 1fr 230px;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+/* ============================================================
+   ICONO
+   ============================================================ */
+
+.endpoint-icon {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #f0e8fa;
+
+    font-size: 36px;
+}
+
+.endpoint-icon.admin {
+    background: #f3eafb;
+}
+
+
+/* ============================================================
+   INFORMACIÓN
+   ============================================================ */
+
+.endpoint-info h2 {
+    margin: 0 0 9px;
+
+    color: #21192e;
+
+    font-size: 23px;
+
+    line-height: 1.2;
+}
+
+.endpoint-info p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin: 0;
+
+    color: #93899e;
+
+    font-size: 14px;
+}
+
+.permission {
+    display: inline-flex;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #f0e5fc;
+
+    color: #6d28d9;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* ============================================================
+   BOTÓN
+   ============================================================ */
+
+.endpoint-button {
+    min-height: 66px;
+
+    padding: 12px 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #6330a8;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 650;
+
+    line-height: 1.35;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(99, 48, 168, 0.16);
+
+    transition: 0.2s ease;
+}
+
+.endpoint-button:hover {
+    background: #54258f;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 9px 20px rgba(99, 48, 168, 0.23);
+}
+
+
+/* ============================================================
+   DESCRIPCIÓN
+   ============================================================ */
+
+.endpoint-description {
+    margin: 23px 0 20px;
+
+    color: #746a80;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ============================================================
+   RESPUESTAS
+   ============================================================ */
+
+.backend-response {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 17px 20px;
+
+    border-radius: 11px;
+}
+
+.response-circle {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 23px;
+
+    font-weight: 700;
+}
+
+.backend-response strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 14px;
+}
+
+.backend-response p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ============================================================
+   ÉXITO
+   ============================================================ */
+
+.backend-response.success {
+    border: 1px solid #bde9d8;
+
+    background: #f0faf5;
+
+    color: #176b4d;
+}
+
+.backend-response.success .response-circle {
+    background: #20966d;
+}
+
+
+/* ============================================================
+   ERROR
+   ============================================================ */
+
+.backend-response.danger {
+    border: 1px solid #f1c4cc;
+
+    background: #fff1f3;
+
+    color: #a51e3b;
+}
+
+.backend-response.danger .response-circle {
+    background: #d52b4c;
+}
+
+
+/* ============================================================
+   CERRAR SESIÓN
+   ============================================================ */
+
+.logout-container {
+    display: flex;
+
+    justify-content: center;
+
+    padding: 15px 0 25px;
+}
+
+.logout-button {
+    padding: 11px 22px;
+
+    border: 1px solid #ded6e6;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #5d5368;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.logout-button:hover {
+    border-color: #7c3aed;
+
+    color: #6330a8;
+
+    background: #faf7fd;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.backend-footer {
+    padding: 10px 0 20px;
+
+    text-align: center;
+}
+
+.footer-line {
+    width: 180px;
+    height: 2px;
+
+    margin: 0 auto 18px;
+
+    background: #ebe5ef;
+
+    position: relative;
+}
+
+.footer-line span {
+    position: absolute;
+
+    width: 52px;
+    height: 3px;
+
+    top: -1px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 5px;
+
+    background: #7c3aed;
+}
+
+.backend-footer p {
+    margin: 0;
+
+    color: #8d8297;
+
+    font-size: 13px;
+}
+
+.backend-footer span {
+    margin: 0 8px;
+
+    color: #c5bacd;
+}
+
+.backend-footer strong {
+    color: #6330a8;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    .endpoint-top {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .endpoint-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .endpoint-button {
+        grid-column: 1 / -1;
+
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .backend-section {
+        margin-top: 25px;
+    }
+
+    .backend-header {
+        padding: 10px 5px 28px;
+    }
+
+    .backend-header h1 {
+        font-size: 39px;
+    }
+
+    .endpoint-card {
+        padding: 20px 17px;
+    }
+
+    .endpoint-top {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .endpoint-icon {
+        width: 72px;
+        height: 72px;
+
+        font-size: 30px;
+    }
+
+    .endpoint-button {
+        width: 100%;
+    }
+
+}
